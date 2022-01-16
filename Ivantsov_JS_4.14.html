@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivantsov_JS_4.14</title>
+</head>
+
+<body>
+    <script>
+        {
+            "use strict";
+
+            let EmailAddress = 'gogoducks@gmail.com';
+            getSubstring = (str, start, end) => {
+                return str.substring(start, end);
+            }
+            let result = getSubstring(EmailAddress, EmailAddress.indexOf('@') + 1, EmailAddress.length);
+            alert(result);
+        }
+    </script>
+</body>
+
+
+</html>

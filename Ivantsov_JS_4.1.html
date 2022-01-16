@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivantsov_JS_4.1</title>
+</head>
+
+<body>
+    <script>
+        {
+            "use strict";
+
+            products = ['Блины', 'Квас', 'Пельмени', 'Икра'];
+
+            // Не совсем ясно для чего нужно добавлять массив в объект window, ведь и так все работает.
+            
+            function printProduct(arr) {
+                let tmp = '';
+                for (let i = 0; i < arr.length; i++) {
+                    tmp = tmp + products[i] + '<br>';
+                }
+                document.write(tmp);
+            }
+        }
+        printProduct(products);
+    </script>
+</body>
+
+</html>

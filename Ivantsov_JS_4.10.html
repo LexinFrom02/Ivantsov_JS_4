@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivantsov_JS_4.10</title>
+</head>
+
+<body>
+    <script>
+        {
+            "use strict";
+
+            let person = {
+                name: '',
+                surname: '',
+                setName: function (newName) { this.name = newName; },
+                setSurname: function (newSurname) { this.surname = newSurname; },
+                getFullName: function () { return (new String).concat(this.name, ' ', this.surname); }
+            };
+            person.setName('Aleksey');
+            person.setSurname('Bobtzov');
+            console.log(person.getFullName());
+        }
+    </script>
+</body>
+
+
+</html>

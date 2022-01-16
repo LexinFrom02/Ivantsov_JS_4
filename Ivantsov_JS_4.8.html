@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivantsov_JS_4.8</title>
+</head>
+
+<body>
+    <script>
+        {
+            "use strict";
+
+            let city = { name: "Санкт-Петербург", population: "7 млн" }
+            city['printProperties'] = function () { return 'name=' + this.name + '/population=' + this.population + '/' };
+            let str = city['printProperties']();
+            console.log(str);
+        }
+    </script>
+</body>
+
+
+</html> 
